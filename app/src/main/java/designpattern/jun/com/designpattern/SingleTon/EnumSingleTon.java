@@ -9,7 +9,9 @@ import android.util.Log;
 
 public enum  EnumSingleTon {
 
-    INSTACE; // 定义一个枚举原素，代表 EnumSingleTon 一个实例
+    INSTACE {
+
+    }; // 定义一个枚举原素，代表 EnumSingleTon 一个实例
 
     /**
      * 枚举中的构造方法只能写成 private 或是不写「不写默认就是 private」，所以枚举防止外部来实例化对象

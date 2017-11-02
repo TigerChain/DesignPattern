@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import designpattern.jun.com.designpattern.R;
-import designpattern.jun.com.designpattern.SingleTon.EnumSingleTon;
 
 /**
  * @Description 简单工厂界面

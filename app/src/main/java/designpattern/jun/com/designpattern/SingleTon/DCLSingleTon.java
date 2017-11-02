@@ -5,15 +5,17 @@ package designpattern.jun.com.designpattern.SingleTon;
  * @Creator TigerChain（创建者）
  */
 
-public class DCLSingleTon {
+public class DCLSingleTon  {
 
     private static DCLSingleTon instance ;
 
     private DCLSingleTon(){}
 
     public static DCLSingleTon getInstance(){
+        //第一次检查
         if(null == instance){
             synchronized (DCLSingleTon.class){
+                // 第二次检查
                 if(null == instance){
                     instance = new DCLSingleTon() ;
                 }
@@ -21,4 +23,5 @@ public class DCLSingleTon {
         }
         return instance ;
     }
+
 }

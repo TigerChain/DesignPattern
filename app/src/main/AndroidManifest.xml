@@ -21,6 +21,10 @@
         <activity android:name=".FactoryPatttern.SimpleFactory.SimpleFactoryMactivity"
             android:label="简单工厂模式"
             android:screenOrientation="portrait"></activity>
+        <activity android:name=".SingleTon.SingleTonActivity"
+            android:label="单例模式"
+            android:screenOrientation="portrait"
+            ></activity>
     </application>
 
 </manifest>

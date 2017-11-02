@@ -13,6 +13,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import designpattern.jun.com.designpattern.FactoryPatttern.SimpleFactory.SimpleFactoryMactivity;
+import designpattern.jun.com.designpattern.SingleTon.SingleTonActivity;
 import designpattern.jun.com.designpattern.utils.IntentUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -50,8 +51,19 @@ public class MainActivity extends AppCompatActivity {
         homeAdpater.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
+                switch (position){
+                    case 0:
+                        IntentUtils.jumpTo(MainActivity.this,SimpleFactoryMactivity.class,null);
+                        break ;
+                    case 1:
+                        IntentUtils.jumpTo(MainActivity.this,SingleTonActivity.class,null);
+                        break ;
+                    default:
+                        break;
+                }
+
                 Toast.makeText(MainActivity.this,datas.get(position),Toast.LENGTH_SHORT).show() ;
-                IntentUtils.jumpTo(MainActivity.this,SimpleFactoryMactivity.class,null);
+
             }
 
             @Override
