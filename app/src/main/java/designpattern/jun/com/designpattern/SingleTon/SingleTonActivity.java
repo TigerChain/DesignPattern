@@ -17,13 +17,15 @@ import designpattern.jun.com.designpattern.utils.ThreadCountDown;
  */
 public class SingleTonActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button btn_lazy_style_single,btn_lazy_style_single_mutithread ;
-
+    private Button btn_lazy_style_single,
+            btn_lazy_style_single_mutithread,
+            btn_hungryman_singleton,
+            btn_hungryman_mutithread,
+            btn_enum_singleton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.singleton_activity);
-
         initView() ;
     }
 
@@ -31,9 +33,15 @@ public class SingleTonActivity extends AppCompatActivity implements View.OnClick
 
         btn_lazy_style_single = this.findViewById(R.id.btn_lazy_style_single) ;
         btn_lazy_style_single_mutithread = this.findViewById(R.id.btn_lazy_style_single_mutithread) ;
+        btn_hungryman_singleton = this.findViewById(R.id.btn_hungryman_singleton) ;
+        btn_hungryman_mutithread = this.findViewById(R.id.btn_hungryman_mutithread) ;
+        btn_enum_singleton = this.findViewById(R.id.btn_enum_singleton) ;
 
         btn_lazy_style_single.setOnClickListener(this);
         btn_lazy_style_single_mutithread.setOnClickListener(this);
+        btn_hungryman_singleton.setOnClickListener(this);
+        btn_hungryman_mutithread.setOnClickListener(this);
+        btn_enum_singleton.setOnClickListener(this);
 
     }
 
@@ -49,12 +57,35 @@ public class SingleTonActivity extends AppCompatActivity implements View.OnClick
             case R.id.btn_lazy_style_single_mutithread:
                 mutilThreadTest(Constants.SAFELAZYSTYLE);
                 break ;
+            //饿汉式单例模式
+            case R.id.btn_hungryman_singleton:
+                HungryManSingleTon.getInstance() ;
+                break ;
+            //多线程操作饿汉式单例
+            case R.id.btn_hungryman_mutithread:
+                mutilThreadTest(Constants.HUNGRYMAN);
+                break ;
+            //枚举类单例
+            case R.id.btn_enum_singleton:
+                EnumSingleTon.INSTACE.doSometing();
+                break ;
+            // 以下几种建议大家自己动手实现，类我都写好了，光在这里调用看效果即可
+
+            // 1、枚举类多线程
+            // 2、DCL 单例
+            // 3、DCL多线程
+            // 4、静态内部类单例
+            // 5、静态内部类多线程操作单例
             default:
                 break ;
         }
 
     }
 
+    /**
+     * 这个测试时间可以对比出来线程安全和非安全的性能「看谁耗时少」
+     * @param flag
+     */
     private void mutilThreadTest(final int flag) {
         // 这里来500个线程是为了统计时间
         int threadNum = 500 ;
@@ -74,6 +105,9 @@ public class SingleTonActivity extends AppCompatActivity implements View.OnClick
                         case Constants.SAFELAZYSTYLE:
                             SafeLazyStyleSingleTon.getInstance().doSomthing();
                             break ;
+                        case Constants.HUNGRYMAN:
+                            HungryManSingleTon.getInstance().doSomthing();
+                            break ;
                         default:
                             break ;
                     }
@@ -83,6 +117,5 @@ public class SingleTonActivity extends AppCompatActivity implements View.OnClick
             e.printStackTrace();
         }
     }
-
 
 }

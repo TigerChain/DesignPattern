@@ -26,9 +26,6 @@ public class SafeLazyStyleSingleTon  {
         return  instance ;
     }
 
-
-
-
     public void doSomthing() {
         try {
             Thread.sleep(300);

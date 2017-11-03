@@ -8,9 +8,6 @@ package designpattern.jun.com.designpattern.SingleTon;
 public class StaticSingleTon {
 
     private StaticSingleTon(){}
-
-
-
     /**
      * 静态内部类 实现了线程安全，并且是延时初始化
      */

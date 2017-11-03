@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerview ;
 
-
     private ArrayList<String> datas = new ArrayList<>() ;
 
     private HomeAdpater homeAdpater ;
@@ -103,8 +102,6 @@ public class MainActivity extends AppCompatActivity {
                         onItemClickListener.onItemClick(view,holder.getLayoutPosition());
                     }
                 });
-
-
 
                 holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override

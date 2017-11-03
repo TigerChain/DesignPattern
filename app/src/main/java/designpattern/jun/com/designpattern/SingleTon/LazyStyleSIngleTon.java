@@ -22,7 +22,7 @@ public class LazyStyleSIngleTon {
             instance = new LazyStyleSIngleTon() ;
         }
 
-        Log.e(TAG,instance.toString()) ;
+        Log.e(TAG+"地址 ",instance.toString()) ;
         return instance ;
     }
 
@@ -36,6 +36,5 @@ public class LazyStyleSIngleTon {
             e.printStackTrace();
         }
     }
-
 
 }
