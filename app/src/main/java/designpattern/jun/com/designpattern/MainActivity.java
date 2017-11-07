@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 import designpattern.jun.com.designpattern.FactoryPatttern.SimpleFactory.SimpleFactoryMactivity;
 import designpattern.jun.com.designpattern.SingleTon.SingleTonActivity;
+import designpattern.jun.com.designpattern.Strategy.StrategyActivity;
 import designpattern.jun.com.designpattern.utils.IntentUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private void initData() {
         datas.add("简单工厂模式");
         datas.add("单例模式") ;
+        datas.add("策略模式") ;
     }
 
     private void initView() {
@@ -56,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
                         break ;
                     case 1:
                         IntentUtils.jumpTo(MainActivity.this,SingleTonActivity.class,null);
+                        break ;
+                    case 2:
+                        IntentUtils.jumpTo(MainActivity.this,StrategyActivity.class,null);
                         break ;
                     default:
                         break;
