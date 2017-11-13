@@ -7,3 +7,4 @@
 * 01、[简单工厂模式--SimpleFactory](http://www.jianshu.com/p/36fe35ad743a)
 * 02、[单例模式--SingleTon](http://www.jianshu.com/p/62b2e89621a5)
 * 03、[策略模式--Strategy](http://www.jianshu.com/p/135532803cdb)
+* 04、[适配器模式--Adapter](http://www.jianshu.com/p/1edf5d944abb)
