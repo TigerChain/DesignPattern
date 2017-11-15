@@ -1,5 +1,10 @@
 package designpattern.jun.com.designpattern.Strategy;
 
+import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
+import android.widget.ListAdapter;
+import android.widget.SimpleAdapter;
+
 /**
  * @Description 出行的上下文
  * @Creator junjun（创建者）
@@ -10,6 +15,7 @@ public class TravelContext {
 
     public TravelContext(ITravelStrategy iTravelStrategy){
         this.iTravelStrategy = iTravelStrategy ;
+        BaseAdapter
     }
 
     /***
