@@ -31,6 +31,15 @@
             android:name=".Strategy.StrategyActivity"
             android:label="策略模式"
             android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".Proxy.AIDL.AidlActivity"
+            android:label="代理模式--远程代理"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <service android:name=".Proxy.AIDL.AIDLRemoteService"
+            android:process=":reomte"></service>
     </application>
 
 </manifest>
