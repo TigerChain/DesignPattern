@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteException;
 import android.support.annotation.Nullable;
+import android.util.Log;
 
 import designpattern.jun.com.designpattern.CustomAIDL;
 
@@ -14,10 +15,10 @@ import designpattern.jun.com.designpattern.CustomAIDL;
  */
 public class AIDLRemoteService extends Service {
 
-
     private final CustomAIDL.Stub aidl = new CustomAIDL.Stub() {
         @Override
         public String getStr() throws RemoteException {
+            Log.e("remote","我是远程服务返回的 HELLO");
             return " 我是远程服务返回的 HELLO ";
         }
     } ;

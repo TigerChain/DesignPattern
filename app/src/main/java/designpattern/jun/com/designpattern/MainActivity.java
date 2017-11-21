@@ -13,6 +13,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import designpattern.jun.com.designpattern.FactoryPatttern.SimpleFactory.SimpleFactoryMactivity;
+import designpattern.jun.com.designpattern.Observer.CustomEventBus.CustomBusActivity;
 import designpattern.jun.com.designpattern.Proxy.AIDL.AidlActivity;
 import designpattern.jun.com.designpattern.SingleTon.SingleTonActivity;
 import designpattern.jun.com.designpattern.Strategy.StrategyActivity;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         datas.add("单例模式") ;
         datas.add("策略模式") ;
         datas.add("代理模式") ;
+        datas.add("观察者模式") ;
     }
 
     private void initView() {
@@ -66,6 +68,9 @@ public class MainActivity extends AppCompatActivity {
                         break ;
                     case 3:
                         IntentUtils.jumpTo(MainActivity.this,AidlActivity.class,null);
+                        break ;
+                    case 4:
+                        IntentUtils.jumpTo(MainActivity.this,CustomBusActivity.class,null);
                         break ;
                     default:
                         break;

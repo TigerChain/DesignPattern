@@ -39,7 +39,10 @@
         </activity>
 
         <service android:name=".Proxy.AIDL.AIDLRemoteService"
-            android:process=":reomte"></service>
+            ></service>
+        <activity android:name=".Observer.CustomEventBus.CustomBusActivity"
+            android:label="观察者模式--自定义EventBus"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
