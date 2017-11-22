@@ -9,7 +9,8 @@
         android:id="@+id/btn_send_event"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="发送信息"/>
+        android:textAllCaps="false"
+        android:text="使用自定义 EventBus 发送信息"/>
 
 
     <TextView

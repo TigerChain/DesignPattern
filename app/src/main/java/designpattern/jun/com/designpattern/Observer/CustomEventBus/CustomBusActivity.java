@@ -53,4 +53,10 @@ public class CustomBusActivity extends AppCompatActivity implements View.OnClick
         Toast.makeText(CustomBusActivity.this,string,Toast.LENGTH_SHORT).show();
         tv_recive_message.setText("收到信息："+string);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        CustomEventBus.getInstance().unRegister(this);
+    }
 }
