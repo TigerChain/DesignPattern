@@ -43,6 +43,9 @@
         <activity android:name=".Observer.CustomEventBus.CustomBusActivity"
             android:label="观察者模式--自定义EventBus"
             android:screenOrientation="portrait"></activity>
+        <activity android:name=".Builder.software_development.SoftWareDevActivity"
+            android:label="建造者模式--软件开发"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
