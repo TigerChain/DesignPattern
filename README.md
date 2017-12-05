@@ -8,3 +8,6 @@
 * 02、[单例模式--SingleTon](http://www.jianshu.com/p/62b2e89621a5)
 * 03、[策略模式--Strategy](http://www.jianshu.com/p/135532803cdb)
 * 04、[适配器模式--Adapter](http://www.jianshu.com/p/1edf5d944abb)
+* 05、[代理模式--Proxy](http://www.jianshu.com/p/1b3b6b003032)
+* 06、[观察者模式--Observer](http://www.jianshu.com/p/b972ba509c66)
+* 07、[建造者模式--Builder](http://www.jianshu.com/p/300cbb9ee7f2)

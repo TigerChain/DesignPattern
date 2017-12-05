@@ -52,7 +52,6 @@ public class SoftWareDevActivity extends AppCompatActivity implements View.OnCli
                 );
                 break ;
 
-
             default:
                 break ;
         }
