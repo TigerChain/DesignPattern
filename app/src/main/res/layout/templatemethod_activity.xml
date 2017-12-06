@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/titleBarView"
+        android:layout_width="match_parent"
+        android:background="#fc67a7"
+        android:gravity="center_vertical"
+        android:layout_height="48dp">
+
+        <Button
+            android:id="@+id/titlebar_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "左边"/>
+
+        <TextView
+            android:id="@+id/titlebar_tv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            tools:text="中间文字"/>
+
+        <Button
+            android:id="@+id/titlebar_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:text = "右边"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffeecc"
+        >
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -18,6 +18,8 @@ import designpattern.jun.com.designpattern.Observer.CustomEventBus.CustomBusActi
 import designpattern.jun.com.designpattern.Proxy.AIDL.AidlActivity;
 import designpattern.jun.com.designpattern.SingleTon.SingleTonActivity;
 import designpattern.jun.com.designpattern.Strategy.StrategyActivity;
+import designpattern.jun.com.designpattern.TemplateMethod.MyActivity;
+import designpattern.jun.com.designpattern.TemplateMethod.TemplateMethodActivity;
 import designpattern.jun.com.designpattern.utils.IntentUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         datas.add("代理模式") ;
         datas.add("观察者模式") ;
         datas.add("建造者模式") ;
+        datas.add("模版方法模式") ;
     }
 
     private void initView() {
@@ -76,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
                         break ;
                     case 5:
                         IntentUtils.jumpTo(MainActivity.this,SoftWareDevActivity.class,null);
+                        break ;
+                    case 6:
+                        IntentUtils.jumpTo(MainActivity.this,MyActivity.class,null);
                         break ;
                     default:
                         break;

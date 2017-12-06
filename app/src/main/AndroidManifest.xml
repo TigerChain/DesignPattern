@@ -46,6 +46,12 @@
         <activity android:name=".Builder.software_development.SoftWareDevActivity"
             android:label="建造者模式--软件开发"
             android:screenOrientation="portrait"></activity>
+
+
+
+        <activity android:name=".TemplateMethod.MyActivity"
+            android:label="模版方法模式"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

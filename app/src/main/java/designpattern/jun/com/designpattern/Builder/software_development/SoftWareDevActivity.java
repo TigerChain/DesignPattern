@@ -1,5 +1,6 @@
 package designpattern.jun.com.designpattern.Builder.software_development;
 
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -22,7 +23,6 @@ public class SoftWareDevActivity extends AppCompatActivity implements View.OnCli
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.softwaredev_activity);
-
         initView() ;
     }
 
