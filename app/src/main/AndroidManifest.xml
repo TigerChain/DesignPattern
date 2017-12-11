@@ -32,26 +32,36 @@
             android:label="策略模式"
             android:screenOrientation="portrait"></activity>
 
-        <activity android:name=".Proxy.AIDL.AidlActivity"
+        <activity
+            android:name=".Proxy.AIDL.AidlActivity"
             android:label="代理模式--远程代理"
             android:screenOrientation="portrait">
 
         </activity>
 
-        <service android:name=".Proxy.AIDL.AIDLRemoteService"
-            ></service>
-        <activity android:name=".Observer.CustomEventBus.CustomBusActivity"
+        <service android:name=".Proxy.AIDL.AIDLRemoteService"></service>
+
+        <activity
+            android:name=".Observer.CustomEventBus.CustomBusActivity"
             android:label="观察者模式--自定义EventBus"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".Builder.software_development.SoftWareDevActivity"
+
+        <activity
+            android:name=".Builder.software_development.SoftWareDevActivity"
             android:label="建造者模式--软件开发"
             android:screenOrientation="portrait"></activity>
 
 
-
-        <activity android:name=".TemplateMethod.MyActivity"
+        <activity
+            android:name=".TemplateMethod.MyActivity"
             android:label="模版方法模式"
             android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".Decorator.wrapperExpandableListAdapter.MyExpandListViewActivity"
+            android:label="装饰模式"
+            android:screenOrientation="portrait"
+            ></activity>
+
     </application>
 
 </manifest>

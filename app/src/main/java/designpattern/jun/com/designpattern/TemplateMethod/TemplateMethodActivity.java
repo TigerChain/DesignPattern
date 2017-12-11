@@ -13,7 +13,7 @@ import android.widget.TextView;
 import designpattern.jun.com.designpattern.R;
 
 /**
- * @Description
+ * @Description 带有公共头的 Activity
  * @Creator junjun（创建者）
  */
 public abstract class TemplateMethodActivity extends AppCompatActivity {
@@ -23,7 +23,6 @@ public abstract class TemplateMethodActivity extends AppCompatActivity {
     private RelativeLayout content ;
 
     private View titleView ;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,14 +35,14 @@ public abstract class TemplateMethodActivity extends AppCompatActivity {
         
         init() ;
     }
-
+    // 初始化操作
     protected abstract void init();
+    // 取得子布局
     protected abstract int getLayoutResID();
 
     private void setContentLayout(int ResId) {
         LayoutInflater.from(this).inflate(ResId, content);
     }
-
 
     private void initView(){
         titleView = this.findViewById(R.id.titleBarView) ;
@@ -53,7 +52,6 @@ public abstract class TemplateMethodActivity extends AppCompatActivity {
         titlebar_btn_right = titleView.findViewById(R.id.titlebar_btn_right) ;
 
         content = this.findViewById(R.id.content) ;
-
     }
 
     protected void initleftButton(String str){
@@ -118,17 +116,15 @@ public abstract class TemplateMethodActivity extends AppCompatActivity {
         }
     }
 
-
-
-
+    // 左边按钮监听器
     public interface LeftButtonClickListener{
         void leftButtonClick(View view ) ;
     }
-
+    // 右边按钮的监听器
     public interface RightButtonClickListener{
         void rightButtonClick(View view) ;
     }
-
+    // 取得子类内容界面
     public View getContentView(){
         return this.content ;
     }

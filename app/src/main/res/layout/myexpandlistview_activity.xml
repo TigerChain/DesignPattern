@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEDEDED"
+    android:orientation="vertical">
+
+    <ExpandableListView
+        android:id="@+id/expandableListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:childDivider="#FF000000"
+        android:divider="#FF000000"
+        android:dividerHeight="1dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        >
+
+    </ExpandableListView>
+
+    <com.diegocarloslima.fgelv.lib.FloatingGroupExpandableListView
+        android:id="@+id/floatexpandableListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:childDivider="#FF000000"
+        android:divider="#FF000000"
+        android:dividerHeight="1dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        >
+
+    </com.diegocarloslima.fgelv.lib.FloatingGroupExpandableListView>
+
+
+
+
+</LinearLayout>

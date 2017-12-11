@@ -13,6 +13,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import designpattern.jun.com.designpattern.Builder.software_development.SoftWareDevActivity;
+import designpattern.jun.com.designpattern.Decorator.wrapperExpandableListAdapter.MyExpandListViewActivity;
 import designpattern.jun.com.designpattern.FactoryPatttern.SimpleFactory.SimpleFactoryMactivity;
 import designpattern.jun.com.designpattern.Observer.CustomEventBus.CustomBusActivity;
 import designpattern.jun.com.designpattern.Proxy.AIDL.AidlActivity;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         datas.add("观察者模式") ;
         datas.add("建造者模式") ;
         datas.add("模版方法模式") ;
+        datas.add("装饰模式") ;
     }
 
     private void initView() {
@@ -82,6 +84,9 @@ public class MainActivity extends AppCompatActivity {
                         break ;
                     case 6:
                         IntentUtils.jumpTo(MainActivity.this,MyActivity.class,null);
+                        break ;
+                    case 7:
+                        IntentUtils.jumpTo(MainActivity.this,MyExpandListViewActivity.class,null);
                         break ;
                     default:
                         break;
