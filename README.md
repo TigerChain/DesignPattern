@@ -11,3 +11,4 @@
 * 05、[代理模式--Proxy](http://www.jianshu.com/p/1b3b6b003032)
 * 06、[观察者模式--Observer](http://www.jianshu.com/p/b972ba509c66)
 * 07、[建造者模式--Builder](http://www.jianshu.com/p/300cbb9ee7f2)
+* 08、[模版方法模式--Template-Method](https://www.jianshu.com/p/6c6191a47197)
